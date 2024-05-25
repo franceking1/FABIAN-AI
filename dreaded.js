@@ -48,7 +48,7 @@ const Heroku = require("heroku-client");
 const gptdm = process.env.GPT_INBOX || 'TRUE';
     const cmd = body.startsWith(prefix);
 //const autobio = process.env.AUTOBIO || 'TRUE';
-const botname = process.env.BOTNAME || 'RAIDER AI';
+const botname = process.env.BOTNAME || 'FABIAN-AI';
 const antibot = process.env.ANTIBOT || 'FALSE';
   
     const command = body.replace(prefix, "").trim().split(/ +/).shift().toLowerCase();
@@ -82,7 +82,7 @@ const antibot = process.env.ANTIBOT || 'FALSE';
             const qmsg = (quoted.msg || quoted);
     const author = process.env.STICKER_AUTHOR ||'𝐔𝐍𝐑𝐔𝐋𝐘™';
     const packname = process.env.STICKER_PACKNAME || 'RAIDER';
-const dev = process.env.DEV || '923195832822'
+const dev = process.env.DEV || '254757835036 '
 
 const menu = process.env.MENU_TYPE || 'VIDEO';
  const DevDreaded = dev.split(",");
@@ -100,8 +100,8 @@ const menu = process.env.MENU_TYPE || 'VIDEO';
      const isAdmin = m.isGroup ? groupAdmin.includes(m.sender) : false;
 const admin = process.env.ADMIN_MSG || '𝐅𝐚𝐢𝐥𝐮𝐫𝐞!, 𝐲𝐨𝐮 𝐚𝐫𝐞 𝐚 𝐟𝐨𝐨𝐥 🤡?';
     const group = process.env.GROUP_ONLY_MSG || 'Is this a group chat?';
-    const botAdmin = process.env.BOT_ADMIN_MSG || '𝐅**𝐤 𝐬𝐭𝐟𝐮 𝐲𝐨𝐮 𝐚𝐢𝐧𝐭 𝐮𝐧𝐫𝐮𝐥𝐲'
-    const NotOwner = process.env.NOT_OWNER_MSG || 'stfu you aint 𝐮𝐧𝐫𝐮𝐥𝐲';
+    const botAdmin = process.env.BOT_ADMIN_MSG || 'You are not an admin!'
+    const NotOwner = process.env.NOT_OWNER_MSG || 'For owners only';
 const wapresence = process.env.WA_PRESENCE || 'recording';
 const antilink = process.env.ANTILINK || 'TRUE';
 const antilinkall = process.env.ANTILINK_ALL || 'FALSE';
@@ -112,10 +112,10 @@ const runtime = function (seconds) {
  var h = Math.floor((seconds % (3600 * 24)) / 3600); 
  var m = Math.floor((seconds % 3600) / 60); 
  var s = Math.floor(seconds % 60); 
- var dDisplay = d > 0 ? d + (d == 1 ? " 𝐝𝐚𝐲, " : " 𝐃𝐚𝐲, ") : ""; 
- var hDisplay = h > 0 ? h + (h == 1 ? " 𝐡𝐨𝐮𝐫, " : " 𝐇𝐨𝐮𝐫𝐬, ") : ""; 
- var mDisplay = m > 0 ? m + (m == 1 ? " 𝐦𝐢𝐧𝐮𝐭𝐞, " : " 𝐌𝐢𝐧𝐮𝐭𝐞𝐬, ") : ""; 
- var sDisplay = s > 0 ? s + (s == 1 ? " 𝐬𝐞𝐜𝐨𝐧𝐝" : " 𝐒𝐞𝐜𝐨𝐧𝐝𝐬") : ""; 
+ var dDisplay = d > 0 ? d + (d == 1 ? " 𝐝𝐚𝐲, " : " d, ") : ""; 
+ var hDisplay = h > 0 ? h + (h == 1 ? " 𝐡𝐨𝐮𝐫, " : " h, ") : ""; 
+ var mDisplay = m > 0 ? m + (m == 1 ? " 𝐦𝐢𝐧𝐮𝐭𝐞, " : " m, ") : ""; 
+ var sDisplay = s > 0 ? s + (s == 1 ? " 𝐬𝐞𝐜𝐨𝐧𝐝" : " s") : ""; 
  return dDisplay + hDisplay + mDisplay + sDisplay; 
  } 
   
@@ -343,18 +343,11 @@ let cap = `╭════〘 *_𝐑𝐀𝐈𝐃𝐄𝐑 𝐁𝐎𝐓_* 〙═�
 ┃༄╭──────────────
 ┃༄│ *_𝐎𝐰𝐧𝐞𝐫 : 𝐔𝐍𝐑𝐔𝐋𝐘𝐂_*
 ┃༄│ *_𝐔𝐬𝐞𝐫 : ${m.pushName}_*
-┃༄│ *_𝐏𝐥𝐚𝐭𝐟𝐨𝐫𝐦 : 𝐋𝐢𝐧𝐮𝐱_*
 ┃༄│ *_𝐒𝐩𝐞𝐞𝐝 : ${dreadedspeed.toFixed(4)} 𝐦𝐬_*
 ┃༄│ *_𝐀𝐯𝐚𝐢𝐥𝐚𝐛𝐥𝐞 𝐑𝐀𝐌 : 𝟑𝟒𝐆𝐁 𝐨𝐟 𝟔𝟐𝐆𝐁_*
 ┃༄│ *_𝐑𝐮𝐧𝐭𝐢𝐦𝐞 : ${runtime(process.uptime())}_*
-┃༄│ *_𝐕𝐞𝐫𝐬𝐢𝐨𝐧: 𝐯𝟕.1.𝟖_*
 ┃༄│
-┃༄│▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚
-┃༄│▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▚▞▞▚▞▞
-┃༄│▎᯾᯾᯾᯾᯾᯾᯾᯾᯾᯾᯾᯾᯾᯾᯾༒︎
-┃༄│  𝐑𝐀𝐈𝐃𝐄𝐑 𝐁𝐎𝐓
-┃༄│
-┃╰─────
+┃  ╰─────
 ╰─────────────────❍
 ╭══〘 *_𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃_* 〙══⊷❍
 ▯╭────────────···▸
@@ -385,7 +378,7 @@ let cap = `╭════〘 *_𝐑𝐀𝐈𝐃𝐄𝐑 𝐁𝐎𝐓_* 〙═�
 ▯╭─────────────···▸
 ┴༄│
 ┃༄│ *_𝐀𝐢-𝐢𝐦𝐠_*
-┃༄│ *_𝐑𝐚𝐢𝐝𝐞𝐫_*
+┃༄│ *_Fabian_*
 ┃༄│ *_𝐆_*
 ┃༄│ *_𝐆𝐩𝐭_*                                                                                                                                                                                                                                                         
 ┬༄│
@@ -417,7 +410,7 @@ let cap = `╭════〘 *_𝐑𝐀𝐈𝐃𝐄𝐑 𝐁𝐎𝐓_* 〙═�
 ╭═══〘 *_𝐎𝐓𝐇𝐄𝐑𝐒_* 〙══⊷❍
 ▯╭─────────────···▸
 ┃༄│ *_𝐎𝐰𝐧𝐞𝐫_*
-┃༄│ *_𝐔𝐧𝐫𝐮𝐥𝐲_*
+┃༄│ *_france_*
 ┃༄│ *_𝐒𝐜𝐫𝐢𝐩𝐭_*
 ┃༄│ *_𝐌𝐞𝐧𝐮_*
 ┃༄│ *_𝐋𝐢𝐬𝐭_*
@@ -453,8 +446,8 @@ let cap = `╭════〘 *_𝐑𝐀𝐈𝐃𝐄𝐑 𝐁𝐎𝐓_* 〙═�
 ┴༄│
 ┃༄│ *_𝐆𝐩𝐭 𝐢𝐧𝐛𝐨𝐱_*
 ✯╰───────────────❍
-    ✰༄ 𝐑𝐀𝐈𝐃𝐄𝐑 𝐁𝐎𝐓 𝐈𝐒 
-    𝐔𝐍𝐃𝐄𝐑 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐌𝐄𝐍𝐓 @𝐔𝐍𝐑𝐔𝐋𝐘 ༄✰
+    ✰༄ Hello This bot 
+    𝐔𝐍𝐃𝐄𝐑 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐌𝐄𝐍𝐓 The GOAT༄✰
 ╰═══════════════⊷❍`;
 
 if (menu === 'VIDEO') {
@@ -477,7 +470,7 @@ client.sendMessage(m.chat, {
                         contextInfo: {
                             externalAdReply: {
                                 showAdAttribution: true,
-                                title: `𝐑𝐀𝐈𝐃𝐄𝐑-𝐀𝐈`,
+                                title: `FABIAN-𝐀𝐈`,
                                 body: `${runtime(process.uptime())}`,
                                 thumbnail: fs.readFileSync('./crown.jpg'),
                                 sourceUrl: 'https://wa.me/254798214068?text=ʜᴇʟʟᴏ+𝐈𝐭𝐬_𝐒𝐢𝐫𝐦™𝕏+Nihostie+Bot+Mkuu+🥲',
@@ -521,7 +514,7 @@ reply(resultt.stderr)
 
 break;
 
-case "raider":
+case "fabian":
 const _0x3cfb2e = _0x5913;
 (function (_0x573879, _0x548047) {
     const _0x197f5a = _0x5913, _0x32c565 = _0x573879();
@@ -1107,7 +1100,7 @@ await m.reply('Successfully removed!');
  case 'sc': case 'script': case 'repo':
 
  client.sendMessage(m.chat, { image: { url: `https://telegra.ph/file/e3518f079801bc1c0c8a6.jpg` }, caption: 
-`👋🏻 Hi *${pushname}*,You can deploy RAIDER-BOT using the GitHub link below🦄\n\nFork and give us a star✨.\n\n https://github.com/Trenchguy/RAIDER-MD\n\nLink with your whatsapp using pairing link below\nhttps://replit.com/@sayless5714/PAIRING-UNRULY-BOT?v=1\n\nAlways count on UNRULY😈..\n\nMade on Earth by 𝑼𝑵𝑹𝑼𝑳𝒀!!` });
+`👋🏻 Hi *${pushname}*,You can deploy FABIAN-AI using the GitHub link below🦄\n\nFork and give us a star✨.\n\n https://github.com/franceking1/FABIAN-AI\n\nLink with your whatsapp using pairing link below\nhttps://replit.com/@sayless5714/PAIRING-UNRULY-BOT?v=1\n\nAlways count on France King 🐐 🔵 ..\n\nMade on Earth by France King !!` });
 
    break;
                                                   
@@ -1736,7 +1729,7 @@ case "ping": case "speed": {
 
 case "alive": { 
   
- client.sendMessage(m.chat, { video: { url: 'https://telegra.ph/file/4bbcfdf0a62d8a53165ee.mp4' }, caption: `Hello ${m.pushName}, 𝐑𝐀𝐈𝐃𝐄𝐑 is alive since  ${runtime(process.uptime())}`, fileLength: "9999999999898989899999999" }, { quoted: m }); 
+ client.sendMessage(m.chat, { video: { url: 'https://telegra.ph/file/4bbcfdf0a62d8a53165ee.mp4' }, caption: `Hello ${m.pushName}, FABIAN AI is alive since  ${runtime(process.uptime())}`, fileLength: "9999999999898989899999999" }, { quoted: m }); 
  }
 break;
 case 'apk': {
@@ -1886,7 +1879,7 @@ case "movie":
 
         //OWNER COMMANDS
 
-          case 'botpp': { 
+          case 'fullpp': { 
     if (!Owner) throw NotOwner; 
     if (!quoted) throw `Tag an image you want to be the bot's profile picture with ${prefix + command}`; 
     if (!/image/.test(mime)) throw `Tag an image you want to be the bot's profile picture with ${prefix + command}`; 
@@ -1913,7 +1906,7 @@ case "movie":
          let res = groups.map(v => v.id) 
          reply(` Broadcasting in ${res.length} Group Chat, in ${res.length * 1.5} seconds`) 
          for (let i of res) { 
-             let txt = `*_</ 𝐑𝐀𝐈𝐃𝐄𝐑 𝐁𝐑𝐎𝐀𝐃𝐂𝐀𝐒𝐓 >\n\n🀄 Message: ${text}\n\nAuthor: ${pushname}_*` 
+             let txt = `*_</ FABIAN-AI 𝐁𝐑𝐎𝐀𝐃𝐂𝐀𝐒𝐓 >\n\n🀄 Message: ${text}\n\nAuthor: ${pushname}_*` 
              await client.sendMessage(i, { 
                  image: { 
                      url: "https://i.imgur.com/xyjvIs4.jpeg" 
